@@ -6,81 +6,85 @@
 <meta name="description" content="Hoja de ruta de la consultoría CASMOR en Kommo">
 <title>CASMOR · Roadmap de consultoría</title>
 <style>
-:root{color-scheme:light;--ink:#172d29;--muted:#4a625b;--line:#d8e2d9;--paper:#f3f5ee;--white:#fff;--green:#244e42;--lime:#e8f6b4}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Instrument Sans","Segoe UI",sans-serif}main,header,footer{max-width:1200px;margin:auto;padding-inline:clamp(18px,5vw,64px)}header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px}.brand{font-weight:800;letter-spacing:.15em}.toplink{color:var(--green);font-weight:650}.hero{background:#183a30;color:#fff;border-radius:24px;padding:clamp(25px,5vw,58px);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:380px;height:380px;right:-140px;top:-175px;border:1px solid #769482;border-radius:50%;box-shadow:0 0 0 32px #ffffff0c,0 0 0 64px #ffffff0a;pointer-events:none}.hero p{max-width:660px;color:#e3eee5;margin:12px 0 22px}.hero small{color:var(--lime)}h1,h2,h3,p{margin-top:0}h1{font:500 clamp(2.55rem,7vw,5rem)/1 Georgia,serif;letter-spacing:-.045em;margin:10px 0 0}h2{font:500 clamp(1.65rem,4vw,2.5rem)/1.15 Georgia,serif;margin-bottom:12px}h3{font-size:1rem;margin-bottom:8px}.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.facts li{border:1px solid #8fa397;border-radius:99px;padding:4px 12px;font-size:.85rem}.map{margin-top:32px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.steps a{display:grid;align-content:start;min-width:0;gap:2px;border:1px solid var(--line);border-radius:15px;background:var(--white);text-decoration:none;color:var(--ink);padding:14px;overflow-wrap:anywhere}.steps span,.eyebrow{font-size:.78rem;text-transform:uppercase;font-weight:750;letter-spacing:.08em}.steps em{font-style:normal;font-size:.8rem;color:var(--muted)}.steps a[aria-current]{background:var(--lime);border-color:#859654}.steps a:hover{border-color:var(--green)}:focus-visible{outline:3px solid #796b17;outline-offset:3px}.stage{margin:16px 0;padding:clamp(18px,4vw,34px);background:white;border:1px solid var(--line);border-radius:18px;scroll-margin-top:12px}.eyebrow{color:var(--green);margin-bottom:6px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border-radius:14px;background:var(--paper);padding:17px}.box p:last-child,.box ul:last-child{margin-bottom:0}.box ul,details ul{padding-left:20px}.result{border-left:3px solid #6b844d;padding-left:13px;margin:18px 0 0}.flow{display:flex;align-items:center;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:16px 0 22px}.flow li{background:#e9f0e8;padding:7px 11px;border-radius:8px}.flow li+li:before{content:"→ ";color:var(--green)}.agenda{list-style:none;padding:0}.agenda li{display:grid;grid-template-columns:70px 1fr;gap:8px;border-bottom:1px solid var(--line);padding:7px 0}.agenda b{white-space:nowrap;color:var(--green)}.resources{margin:28px 0}details{border-top:1px solid #c6d2c7;padding:12px 0}summary{cursor:pointer;font-weight:750}details p,details ul{margin:8px 0}.stage[hidden]{display:none}footer{padding-block:10px 25px;color:var(--muted);font-size:.9rem}
-@media(max-width:670px){.steps{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.hero:after{opacity:.45}}@media print{body{background:white}.stage[hidden]{display:block}.steps,.toplink{display:none}.hero{background:white;color:black;padding:0}.hero p,.hero small{color:black}.hero:after{display:none}.stage{break-inside:avoid}}
+:root{color-scheme:dark;--ink:#f4f7fb;--muted:#a9bbcc;--line:#354453;--paper:#091725;--surface:#152532;--accent:#ff8b3d;--selected:#3d302f;--blue:#85c6f5}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#10385e 0,transparent 650px),var(--paper);color:var(--ink);font:16px/1.6 "Instrument Sans","Segoe UI",sans-serif}main,header,footer{max-width:1200px;margin:auto;padding-inline:clamp(18px,5vw,64px)}header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px}.brand{font-weight:800;letter-spacing:.15em}.brand b{color:var(--accent)}.toplink{color:var(--muted);font-weight:650;text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:99px}.toplink:hover{color:var(--ink)}.hero{background:linear-gradient(120deg,#102f4e,#122332);color:#fff;border-radius:24px;padding:clamp(25px,5vw,58px);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:380px;height:380px;right:-140px;top:-175px;border:1px solid #4582b2;border-radius:50%;box-shadow:0 0 0 32px #ffffff0c,0 0 0 64px #ffffff0a;pointer-events:none}.hero p{max-width:660px;color:#cfdeeb;margin:12px 0 22px}.hero small{color:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font:800 clamp(2.25rem,6vw,4.4rem)/1.04 "Instrument Sans","Segoe UI",sans-serif;letter-spacing:-.045em;margin:10px 0 0}h2{font:750 clamp(1.5rem,3.5vw,2.1rem)/1.2 "Instrument Sans","Segoe UI",sans-serif;margin-bottom:12px}h3{font-size:1rem;margin-bottom:8px}.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.facts li{border:1px solid #526b81;border-radius:99px;padding:4px 12px;font-size:.85rem}.map{margin-top:32px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.steps a{display:grid;place-items:center;text-align:center;font-weight:750;min-width:0;border:1px solid var(--line);border-radius:15px;background:var(--surface);text-decoration:none;color:var(--ink);padding:14px;overflow-wrap:anywhere}.steps span,.eyebrow{font-size:.78rem;text-transform:uppercase;font-weight:750;letter-spacing:.08em}.steps em{font-style:normal;font-size:.8rem;color:var(--muted)}.steps a[aria-current]{background:var(--selected);border-color:#ec7135;color:#fff;box-shadow:0 0 16px #ff78252b}.steps a:hover{border-color:var(--blue)}:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.stage{margin:16px 0;padding:clamp(18px,4vw,34px);background:var(--surface);border:1px solid var(--line);border-radius:18px;scroll-margin-top:12px}.eyebrow{color:var(--accent);margin-bottom:6px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border-radius:14px;background:var(--paper);padding:17px}.box p:last-child,.box ul:last-child{margin-bottom:0}.box ul,details ul{padding-left:20px}.result{border-left:3px solid var(--accent);padding-left:13px;margin:18px 0 0}.flow{display:flex;align-items:center;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:16px 0 22px}.flow li{background:#213a50;padding:7px 11px;border-radius:8px}.flow li+li:before{content:"→ ";color:var(--blue)}.agenda{list-style:none;padding:0}.agenda li{display:grid;grid-template-columns:70px 1fr;gap:8px;border-bottom:1px solid var(--line);padding:7px 0}.agenda b{white-space:nowrap;color:var(--blue)}.resources{margin:28px 0}details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:750}details p,details ul{margin:8px 0}.stage[hidden]{display:none}.stage details{margin-top:18px}.resources li+li,.box li+li{margin-top:6px}footer{padding-block:10px 25px;color:var(--muted);font-size:.9rem}
+@media(max-width:670px){.steps{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.hero:after{opacity:.45}}@media print{:root{color-scheme:light;--ink:#172432;--muted:#445263;--line:#c4ced9;--paper:#f6f8fa;--surface:white;--blue:#254d70;--accent:#a94813}body{background:white}.flow li{background:#e9eff5}.stage[hidden]{display:block}.steps,.toplink{display:none}.hero{background:white;color:black;padding:0}.hero p,.hero small{color:black}.hero:after{display:none}.stage{break-inside:avoid}}
 </style>
 </head>
 <body>
-<header><span class="brand">CASMOR</span><a class="toplink" href="#preparacion">Preparar la próxima reunión</a></header>
+<header><span class="brand">ALIEN <b>CONSULTORÍA</b></span><a class="toplink" href="#preparacion">Preparación</a></header>
 <main>
 <section class="hero" aria-labelledby="titulo">
-<small>CONSULTORÍA · KOMMO PRO</small>
-<h1 id="titulo">De la campaña<br>al seguimiento comercial</h1>
-<p>Cómo conectamos Meta Ads con Kommo, qué estamos configurando para atender consultas de noche y qué vamos a validar antes de la entrega.</p>
-<ul class="facts"><li>Meta CAPI conectada</li><li>Atención prevista de 21:00 a 09:00</li><li>1 de 5 propiedades documentada en el agente</li></ul>
+<small>CASMOR · KOMMO PRO</small>
+<h1 id="titulo">Roadmap de implementación</h1>
+<p>De la captación por propiedad al seguimiento comercial. Cuatro semanas de trabajo en vivo sobre Meta Ads, Kommo y la atención por WhatsApp.</p>
+<ul class="facts"><li>Meta CAPI conectada</li><li>5 Salesbots configurados</li><li>Agente nocturno en prueba</li></ul>
 </section>
 <section class="map" aria-labelledby="mapa">
 <h2 id="mapa">Mapa de trabajo</h2>
-<nav class="steps" aria-label="Etapas de la consultoría">
-<a href="#semana-1"><span>Semana 1</span><strong>Campañas y mensajes</strong><em>Realizado</em></a>
-<a href="#agente"><span>Próxima reunión</span><strong>Agente de IA</strong><em>En configuración</em></a>
-<a href="#piloto"><span>Semana siguiente</span><strong>Piloto y validación</strong><em>Planificado · 3 h</em></a>
-<a href="#entrega"><span>Segunda semana</span><strong>Ajustes y entrega</strong><em>Planificado · 3 h</em></a>
+<nav class="steps" aria-label="Semanas de la consultoría">
+<a href="#semana-1">Semana 1</a><a href="#semana-2">Semana 2</a><a href="#semana-3">Semana 3</a><a href="#semana-4">Semana 4</a>
 </nav>
 <article class="stage" id="semana-1">
-<p class="eyebrow">Semana 1 · Realizado</p>
-<h2>Campañas por propiedad</h2>
-<p>Conectamos la integración de Meta Conversions API con Kommo y configuramos la lectura del ID de cada <strong>conjunto de anuncios</strong> para identificar la propiedad correspondiente al lead.</p>
-<ol class="flow" aria-label="Flujo de un lead de campaña"><li>Lead de Meta Ads</li><li>ID del conjunto</li><li>Propiedad</li><li>Mensaje y número asignados</li></ol>
+<p class="eyebrow">REALIZADO · 10 Y 13 DE NOVIEMBRE</p>
+<h2>Medición y bienvenida por propiedad</h2>
+<p>Conectamos Meta CAPI, revisamos en qué momento del embudo enviar señales a Meta y configuramos los saludos automáticos para las campañas inmobiliarias.</p>
+<ol class="flow" aria-label="Flujo de atención de campaña"><li>Lead entra a Kommo</li><li>Se lee el ID del conjunto</li><li>Se identifica la propiedad</li><li>Sale el saludo desde el WhatsApp asignado</li></ol>
 <div class="grid">
-<section class="box"><h3>Enrutamiento de mensajes</h3><p>El ID del conjunto de anuncios determina qué mensaje debe recibir el lead y desde qué número se envía, según la propiedad promocionada.</p></section>
-<section class="box"><h3>Medición con Meta CAPI</h3><p>La integración quedó conectada. En el piloto comprobaremos el evento configurado en Kommo, su recepción en Meta y, cuando haya datos disponibles, la atribución a anuncios.</p></section>
+<section class="box"><h3>10 de noviembre · Meta CAPI</h3><ul><li>Revisamos el embudo y cómo el equipo distingue un contacto entrante de un prospecto con perfil o una cita realizada.</li><li>Configuramos disparadores para comunicar avances a Meta, incluida <strong>Cita realizada</strong> y el evento de <strong>Compra</strong> en <strong>Logrado con éxito</strong>.</li><li>Revisamos el mapeo de datos del lead, incluido presupuesto y operación, y configuramos una etiqueta para identificar los contactos con origen Meta.</li></ul></section>
+<section class="box"><h3>13 de noviembre · Salesbots</h3><ul><li>Guardamos cinco bots de bienvenida con su mensaje, número de WhatsApp y aviso al responsable si falla el envío.</li><li>Al contrastar un lead de Riga con Ads Manager, confirmamos que el campo del disparador debía ser <strong>Meta Ads → Conjunto de anuncios</strong> y corregimos los bots.</li><li>Configuramos el interruptor <strong>Saludo enviado</strong> para evitar reenvíos y conservamos el circuito de atención manual para consultas sin una coincidencia aplicable.</li></ul></section>
 </div>
-<p class="result"><strong>Qué llevamos al piloto.</strong> La relación conjunto de anuncios → propiedad → mensaje → número y un caso elegible para rastrear en Meta.</p>
+<details><summary>Tratamiento de asesores externos</summary><p>Creamos el embudo <strong>Asesores</strong> para conservar el origen de campaña y distinguir a los intermediarios de los clientes directos. La clasificación se hace manualmente cuando el equipo identifica al asesor. Se podrá evaluar un flujo específico si las conversaciones muestran un patrón repetible.</p></details>
+<p class="result"><strong>Validación pendiente.</strong> Confirmar con nuevos leads que cada conjunto recibe el mensaje correcto desde el número correcto, una sola vez. Rastrear por separado la recepción y atribución de los eventos CAPI en Meta.</p>
 </article>
-<article class="stage" id="agente">
-<p class="eyebrow">Próxima reunión · En configuración</p>
-<h2>Configurar el agente nocturno</h2>
-<p>El agente tiene la fuente de una propiedad. Faltan cuatro fichas para cubrir todo el catálogo de venta.</p>
+<article class="stage" id="semana-2">
+<p class="eyebrow">EN CONFIGURACIÓN · 90 MIN</p>
+<h2>Agente de IA fuera de horario</h2>
+<p>Partimos del agente de ausencia que CASMOR tiene en prueba con una etiqueta y una fuente cargada. La propuesta es usar un solo agente para los canales aprobados y las cinco propiedades.</p>
 <div class="grid">
-<section class="box"><h3>Antes de la reunión</h3><ul><li>CASMOR entrega las cuatro fichas, revisa la primera y confirma zona horaria, días, canales y responsable diurno.</li><li>Consultoría prepara las fuentes, pautas, casos de prueba y revisa los saludos o automatizaciones actuales.</li></ul></section>
-<section class="box"><h3>Trabajo en vivo</h3><ul><li>Cargar fichas y configurar horario, canales, etapas y tono.</li><li>Identificar la propiedad por la referencia del lead cuando esté disponible. Ante dudas, pedir código o enlace.</li><li>Registrar interés y solicitudes de visita. Derivar al equipo con el contexto necesario para confirmar.</li></ul></section>
+<section class="box"><h3>Antes de la sesión</h3><ul><li>CASMOR entrega las cuatro fichas faltantes, revisa la fuente existente y confirma zona horaria, días, líneas de WhatsApp y quién toma los chats al día siguiente.</li><li>Consultoría prepara las fuentes, las pautas para distinguir propiedades y los casos para probar el cruce de turno.</li></ul></section>
+<section class="box"><h3>Trabajo en vivo</h3><ol class="agenda"><li><b>15 min</b> Revisar la configuración de prueba, canales y responsables.</li><li><b>35 min</b> Cargar las fichas y configurar horario de 21:00 a 09:00, pautas y aviso al equipo.</li><li><b>25 min</b> Simular identificación, consulta ambigua, solicitud de visita y pedido de atención humana.</li><li><b>15 min</b> Acordar qué canales entran al piloto y quién verifica la primera noche.</li></ol></section>
 </div>
-<p class="result"><strong>Resultado esperado.</strong> Agente configurado y pruebas iniciales registradas. Si faltan fichas, se demuestra con la propiedad documentada y se deja preparada la derivación para las demás.</p>
+<details><summary>Qué responde el agente y qué toma el equipo</summary><ul><li>Confirma de qué propiedad se habla antes de citar su ficha. Si hay duda, pide nombre, enlace o zona.</li><li>Registra el interés y el horario preferido para una visita. El equipo confirma la cita y responde dudas legales, de negociación o de disponibilidad sin confirmar.</li><li>Si el contacto pide hablar con una persona, deriva con el contexto disponible y deja de hacer preguntas de perfil.</li></ul></details>
+<p class="result"><strong>Salida esperada.</strong> Agente configurado y probado en un alcance acotado. Si faltan fichas aprobadas, las consultas de esas propiedades quedan a cargo del equipo.</p>
 </article>
-<article class="stage" id="piloto">
-<p class="eyebrow">Semana siguiente · Planificado · 3 horas</p>
-<h2>Piloto y validación</h2>
+<article class="stage" id="semana-3">
+<p class="eyebrow">PLANIFICADO · 3 HORAS</p>
+<h2>Respuestas por propiedad y piloto</h2>
+<p>Usamos las primeras conversaciones para ampliar la información que se entrega después del saludo y revisar qué casos conviene resolver por automatización.</p>
 <div class="grid">
-<section class="box"><h3>Antes de la reunión</h3><ul><li>CASMOR aprueba las fichas pendientes y aporta consultas representativas y ejemplos del piloto si está activo.</li><li>Consultoría prepara contactos de prueba, acceso al Administrador de eventos y un lead elegible o un envío previo de CAPI.</li></ul></section>
-<section class="box"><h3>Agenda en vivo</h3><ol class="agenda"><li><b>30 min</b> Revisar fuentes y consultas.</li><li><b>75 min</b> Probar cinco propiedades, mensaje y número por campaña, horario y derivación.</li><li><b>45 min</b> Revisar envío desde Kommo y recepción en Meta.</li><li><b>30 min</b> Corregir, volver a probar y decidir el alcance del piloto.</li></ol></section>
+<section class="box"><h3>Antes de la sesión</h3><ul><li>CASMOR comparte catálogos, fichas, videos o enlaces autorizados por propiedad y ejemplos de chats de campaña y del agente nocturno.</li><li>Consultoría reúne casos de enrutamiento, prepara pruebas por canal y lleva un lead elegible o un envío previo para cotejar en Meta.</li></ul></section>
+<section class="box"><h3>Trabajo en vivo</h3><ol class="agenda"><li><b>30 min</b> Revisar conversaciones reales y priorizar preguntas que quedaron abiertas.</li><li><b>60 min</b> Ajustar los bots por propiedad y definir cuándo ofrecer ficha, catálogo o video.</li><li><b>55 min</b> Probar los cinco saludos, los remitentes, el traspaso a IA o a una persona y el cambio de turno.</li><li><b>35 min</b> Rastrear un evento elegible desde Kommo al Administrador de eventos de Meta.</li></ol></section>
 </div>
-<p class="result"><strong>Resultado esperado.</strong> Registro de casos probados, evidencia disponible de CAPI y pendientes con responsable.</p>
+<p class="result"><strong>Salida esperada.</strong> Respuestas y materiales por propiedad revisados, pruebas registradas y pendientes priorizados para la Semana 4.</p>
 </article>
-<article class="stage" id="entrega">
-<p class="eyebrow">Segunda semana · Planificado · 3 horas</p>
-<h2>Ajustes y entrega</h2>
+<article class="stage" id="semana-4">
+<p class="eyebrow">PROPUESTA PARA VALIDAR TRAS EL PILOTO · 3 HORAS</p>
+<h2>Ajustes y entrega operativa</h2>
+<p>El alcance final se prioriza en función de los casos que aparezcan durante la Semana 3.</p>
 <div class="grid">
-<section class="box"><h3>Antes de la reunión</h3><ul><li>CASMOR comparte dudas y confirma quién tomará los chats y quién mantendrá el catálogo.</li><li>Consultoría reúne conversaciones atendidas, consultas sin respuesta, derivaciones, tiempos de respuesta, uso de créditos y evidencia de Meta, según los datos disponibles.</li></ul></section>
-<section class="box"><h3>Agenda en vivo</h3><ol class="agenda"><li><b>45 min</b> Revisar conversaciones y priorizar ajustes.</li><li><b>60 min</b> Ajustar fichas y repetir pruebas de horario y derivación.</li><li><b>45 min</b> Revisar recepción de eventos y atribución en anuncios.</li><li><b>30 min</b> Capacitar al equipo para actualizar fichas, revisar créditos y pausar el agente.</li></ol></section>
+<section class="box"><h3>Antes de la sesión</h3><ul><li>CASMOR comparte dudas y confirma responsables de seguimiento, catálogo y altas de nuevas campañas.</li><li>Consultoría consolida fallas de envío, preguntas sin respuesta, derivaciones, tiempos de atención, uso de créditos y evidencia disponible de Meta.</li></ul></section>
+<section class="box"><h3>Trabajo en vivo</h3><ol class="agenda"><li><b>45 min</b> Revisar el piloto y priorizar los ajustes de mayor impacto.</li><li><b>60 min</b> Aplicar cambios y repetir los casos críticos de enrutamiento, horario y derivación.</li><li><b>45 min</b> Revisar recepción de eventos y atribución en campañas, según evidencia disponible.</li><li><b>30 min</b> Recorrer con el equipo cómo actualizar fichas, registrar nuevos conjuntos, revisar avisos y pausar el agente.</li></ol></section>
 </div>
-<p class="result"><strong>Resultado esperado.</strong> Entrega operativa con configuración, responsables y pendientes registrados. Si hubo poco volumen, se documenta qué validaciones siguen abiertas.</p>
+<p class="result"><strong>Salida esperada.</strong> Configuración entregada con responsables, criterios de mantenimiento y próximas acciones para las validaciones que sigan pendientes.</p>
 </article>
 </section>
 <section class="resources" id="preparacion" aria-labelledby="preparar">
 <h2 id="preparar">Preparación y pruebas</h2>
-<details open><summary>Información que CASMOR debe preparar</summary><ul><li>Cuatro fichas faltantes y confirmación de la primera. Por propiedad, incluir código, enlace, zona, precio y moneda, disponibilidad, características, contenido autorizado y proceso de visitas.</li><li>Mapa de campañas con ID del conjunto de anuncios, propiedad, mensaje esperado y número correspondiente. Usar los valores reales en la sesión de trabajo.</li><li>Zona horaria, días de atención, canales, responsable al retomar el turno y persona que confirma las visitas.</li></ul></details>
-<details><summary>Criterios para validar el piloto</summary><ul><li>Cada conjunto mapeado activa el mensaje y el número que le corresponden. Probar un ID desconocido y confirmar que el lead queda disponible para revisión.</li><li>Comprobar mensajes alrededor de las 21:00 y 09:00, después de medianoche y en chats que continúan al día siguiente. A las 09:00 el equipo retoma la atención.</li><li>El agente responde con la ficha correcta, registra solicitudes de visita y deriva precios o disponibilidad sin confirmar. Verificar que el saludo de campaña y la IA no generen mensajes duplicados.</li><li>Registrar si Kommo envió el evento, si Meta lo recibió y si aparece atribuido a un anuncio.</li></ul></details>
+<details open><summary>Ficha por propiedad · Semana 2</summary><p>Enviar las cuatro fichas pendientes y revisar la que ya está cargada. Para cada inmueble incluir nombre o código, enlace, zona, precio y moneda, disponibilidad vigente, características, datos autorizados y cómo se solicita una visita. Confirmar el nombre comercial tal como aparece en pauta y en Kommo.</p></details>
+<details><summary>Mapa de campañas y materiales · Semana 3</summary><p>Tener a mano la relación entre conjunto de anuncios, propiedad, saludo, línea de WhatsApp y responsable. Adjuntar el catálogo, la ficha o el video autorizado que corresponda a cada conjunto y ejemplos donde debería enviarse. Los valores operativos se revisan durante la sesión.</p></details>
+<details><summary>Casos para aprobar el piloto</summary><ul><li><strong>Campañas.</strong> Cada conjunto mapeado recibe su saludo desde el número correcto. El saludo no se repite y un fallo de envío genera un aviso interno.</li><li><strong>Origen y clasificación.</strong> Probar consulta directa, conjunto sin coincidencia y asesor externo. Revisar el manejo manual sin perder el contexto del lead.</li><li><strong>Horario.</strong> Probar 20:59, 21:00, medianoche, 08:59 y 09:00, incluidos los chats que empezaron de noche y continúan durante el día.</li><li><strong>Agente.</strong> Confirmar que responde con la ficha correcta, evita duplicar el saludo del Salesbot y deriva visitas o consultas que requieren confirmación humana.</li><li><strong>Meta.</strong> Identificar el evento enviado, confirmar la recepción y revisar si aparece atribuido. Registrar la evidencia y los pendientes.</li></ul></details>
 </section>
 </main>
-<footer>CASMOR · Consultoría de automatización comercial</footer>
+<footer>CASMOR · Consultoría Alien</footer>
 <script>
 const steps = [...document.querySelectorAll('.steps a')];
 const stages = [...document.querySelectorAll('.stage')];
 
 function selectStage() {
-  const current = steps.find(step => step.hash === location.hash) ?? steps[0];
+  const current = steps.find(step => step.hash === location.hash)
+    ?? steps.find(step => step.hasAttribute('aria-current'))
+    ?? steps[0];
   for (const step of steps) {
     if (step === current) step.setAttribute('aria-current', 'step');
     else step.removeAttribute('aria-current');
